@@ -27,6 +27,6 @@ Every change is saved in the history, so any edit can be undone.
 
 **Add a year to Previous Programs.** Put the PDF in `programs/` and add a `<tr>` at the top of the table in `programs.html`.
 
-Missing years with no program on file: 2007–2013, 2016, 2020–2021. The 1993–2005 rows list hosts only, except 2003. Programs that exist only online (2003, and the 2014 Dallas Fed page) are linked with "Web page ↗".
+Missing years with no program on file: 2007, 2009–2013, 2016, 2020–2021. The 1993–2005 rows list hosts only, except 2003. Programs that exist only online (2003, and the 2014 Dallas Fed page) are linked with "Web page ↗".
 
 To preview locally, open `index.html` in a browser.
