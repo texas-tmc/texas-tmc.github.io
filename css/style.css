@@ -191,27 +191,33 @@ h2 {
 .glance-item p { margin: 0; color: var(--muted); font-size: 0.97rem; }
 
 /* Co-hosts */
-.cohosts h2 { font-size: 1.35rem; margin-bottom: 16px; }
-.institutions {
+.cohosts h2 { font-size: 1.35rem; margin-bottom: 20px; }
+.logo-row {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 12px;
 }
-.institutions li {
-  flex: 1 1 160px;
-  text-align: center;
-  font-family: var(--serif);
-  font-weight: 600;
-  color: var(--maroon);
-  background: var(--surface);
+.logo-row li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #fff;
   border: 1px solid var(--border);
   border-radius: 4px;
-  padding: 16px 12px;
-  line-height: 1.3;
+  padding: 16px 14px;
+  min-height: 92px;
 }
+.logo-row img {
+  width: auto;
+  max-width: 100%;
+  max-height: 52px;
+}
+.logo-pair img:first-child { max-height: 44px; flex: none; }
+.logo-pair img:last-child { min-width: 0; max-height: 30px; }
 
 /* History */
 .tribute {
@@ -270,6 +276,7 @@ td.na { color: var(--muted); font-style: italic; }
 @media (max-width: 860px) {
   .split { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .glance { grid-template-columns: 1fr 1fr; row-gap: 24px; }
+  .logo-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (max-width: 600px) {
@@ -283,5 +290,6 @@ td.na { color: var(--muted); font-style: italic; }
   .section { padding: 44px 0; }
   .page-banner { padding: 44px 0; }
   .glance { grid-template-columns: 1fr; }
+  .logo-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   th, td { padding: 10px 12px; }
 }
