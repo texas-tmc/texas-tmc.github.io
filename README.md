@@ -27,6 +27,6 @@ Every change is saved in the history, so any edit can be undone.
 
 **Add a year to Previous Programs.** Put the PDF in `programs/` and add a `<tr>` at the top of the table in `programs.html`.
 
-Missing years with no program on file: 2007–2013, 2016, 2019–2021. The 1993–2005 rows list hosts only.
+Missing years with no program on file: 2007–2013, 2016, 2020–2021. The 1993–2005 rows list hosts only.
 
 To preview locally, open `index.html` in a browser.
