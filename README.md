@@ -6,7 +6,18 @@ A static site (plain HTML and CSS, no build step) served by GitHub Pages.
 - `history.html`: history of the conference
 - `programs.html`: table of previous programs
 - `programs/`: program PDFs, named `YYYY_Host.pdf`
-- `css/style.css`: shared styles
+- `css/style.css`: shared styles (maroon theme, Playfair Display + Lato)
+- `images/`: cover banner and campus photo
+
+## Editing from the browser (no software needed)
+
+Any organizer with access to the GitHub repository can edit the site at github.com:
+
+1. Open the file (for example `index.html`), click the pencil icon, make the change, and click **Commit changes**.
+2. To upload a PDF, open the `programs/` folder, then **Add file → Upload files**.
+3. The live site updates about a minute later.
+
+Every change is saved in the history, so any edit can be undone.
 
 ## Common updates
 
