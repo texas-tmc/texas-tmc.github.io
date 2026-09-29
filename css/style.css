@@ -191,33 +191,30 @@ h2 {
 .glance-item p { margin: 0; color: var(--muted); font-size: 0.97rem; }
 
 /* Co-hosts */
-.cohosts h2 { font-size: 1.35rem; margin-bottom: 20px; }
+.cohosts { padding: 40px 0; border-top: 1px solid var(--border); }
+.cohosts h2 { font-size: 1.2rem; margin-bottom: 20px; }
 .logo-row {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo-row li {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 16px 14px;
-  min-height: 92px;
+  gap: 6px;
+  padding: 4px 20px;
+  border-left: 1px solid var(--border);
 }
-.logo-row img {
-  width: auto;
-  max-width: 100%;
-  max-height: 52px;
-}
-.logo-pair img:first-child { max-height: 44px; flex: none; }
-.logo-pair img:last-child { min-width: 0; max-height: 30px; }
+.logo-row li:first-child { padding-left: 0; border-left: 0; }
+.logo-row li:last-child { padding-right: 0; }
+.logo-row img { width: auto; height: 38px; }
+.logo-row .logo-dallas img { height: 36px; }
+.logo-row .logo-uh img { height: 32px; }
+.logo-pair img:first-child { height: 36px; }
+.logo-pair img:last-child { height: 20px; }
 
 /* History */
 .tribute {
@@ -276,7 +273,8 @@ td.na { color: var(--muted); font-style: italic; }
 @media (max-width: 860px) {
   .split { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .glance { grid-template-columns: 1fr 1fr; row-gap: 24px; }
-  .logo-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .logo-row { flex-wrap: wrap; justify-content: center; row-gap: 20px; }
+  .logo-row li, .logo-row li:first-child, .logo-row li:last-child { border-left: 0; padding: 4px 16px; }
 }
 
 @media (max-width: 600px) {
@@ -290,6 +288,10 @@ td.na { color: var(--muted); font-style: italic; }
   .section { padding: 44px 0; }
   .page-banner { padding: 44px 0; }
   .glance { grid-template-columns: 1fr; }
-  .logo-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .logo-row img { height: 30px; }
+  .logo-row .logo-dallas img { height: 28px; }
+  .logo-row .logo-uh img { height: 26px; }
+  .logo-pair img:first-child { height: 28px; }
+  .logo-pair img:last-child { height: 16px; }
   th, td { padding: 10px 12px; }
 }
