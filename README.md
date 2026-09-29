@@ -21,7 +21,9 @@ Every change is saved in the history, so any edit can be undone.
 
 ## Common updates
 
-**Post the upcoming program.** Put the PDF in `programs/`. In `index.html`, change the host line and replace the "Program coming soon" badge with a link, for example `<a class="badge" href="programs/2027_TexasAM.pdf">View program</a>`.
+**Post the upcoming program.** Upload the PDF to `programs/` (e.g. `2027_TexasAM.pdf`). In `index.html`, replace the `<span class="button" aria-disabled="true">…</span>` line with the commented-out `<a class="button" …>View the 2027 Program →</a>` just above it, and change "Coming soon" under Program in Conference at a Glance.
+
+**Next year's conference.** Replace `images/banner-2027.jpg` with the new banner, then update the dates and location in `index.html`.
 
 **Add a year to Previous Programs.** Put the PDF in `programs/` and add a `<tr>` at the top of the table in `programs.html`.
 
