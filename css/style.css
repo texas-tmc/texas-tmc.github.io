@@ -109,8 +109,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* Page banner for inner pages */
 .page-banner {
-  background: linear-gradient(90deg, var(--maroon) 0%, var(--maroon) 45%, rgba(80, 0, 0, 0.55) 100%),
-    url("../images/tamu-campus.jpg") center 40% / cover no-repeat;
+  background: var(--maroon);
   color: #fff;
   padding: 64px 0;
 }
